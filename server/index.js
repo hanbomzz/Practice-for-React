@@ -13,10 +13,11 @@ const { User } = require("./models/User");
 
 //사용할 수 있도록 app.use 해줌
 
-//application/x-www-form-urlencoded
+//bodyParser.text() : text/xml 방식의 Content-Type 데이터를 받아줌
+//urlencoded : application/x-www-form-urlencoded 방식의 Content-Type 데이터를 받아줌 (jQuery.ajax의 기본 타입)
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//application/json
+//json : application/json 방식의 Content-Type 데이터를 받아줌
 app.use(bodyParser.json());
 app.use(cookieParser());
 

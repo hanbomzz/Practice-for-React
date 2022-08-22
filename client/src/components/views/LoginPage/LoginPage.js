@@ -55,6 +55,7 @@ function LoginPage() {
           type="password"
           value={Password}
           onChange={onPasswordHandler}
+          autoComplete="on"
         ></input>
         <br />
         <button>Login</button>
